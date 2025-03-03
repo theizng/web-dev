@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+body{
+    font-family: "Ubuntu", serif;
+    margin: 0;
+    padding: 0;
+}
