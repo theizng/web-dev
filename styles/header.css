@@ -27,11 +27,13 @@
     text-align: center;
     align-items: center; 
 }
-.pages div{
+.pages a{
+    text-decoration: none;
+    color: black;
     padding-right: 10px;
     padding-left: 10px;
     font-weight: 580;
-    font-size: 16px;
+    font-size: 14px;
     background-color: aquamarine;
     flex: 1;
     text-wrap: nowrap;
