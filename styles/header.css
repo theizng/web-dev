@@ -3,8 +3,8 @@
     text-align: center;
 }
 .left-side img{
-    width: 360px;
-    height: 154px;
+    width: 280px;
+    height: 120px;
     margin-left: 10px;
 }
 .middle-side{
@@ -21,7 +21,7 @@
 .pages{
     display: flex;
     justify-content: space-evenly;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
     flex: 1;
     height: 100%;
     text-align: center;
@@ -34,36 +34,111 @@
     padding-left: 10px;
     font-weight: 580;
     font-size: 14px;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     flex: 1;
     text-wrap: nowrap;
 }
 .right-side{
-    background-color: lightpink;
+    background-color: rgb(255, 255, 255);
     width: 260px;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
+.right-side-container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+}
+.right-side-container img{
+    width: 30px;
+    height: 28px;
+    align-self: center;
+    margin-right: 20px;
+}
+.shopping-cart{
+    position: relative;
+}
+.order-count {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.order-count p {
+    margin: 0; 
+    font-size: 12px;
+}
+
 /* Media Queries for Responsive Layout */
 @media (max-width: 1400px) {
     /* Show only 3 divs in middle-side */
-    .middle-side div:nth-child(4) {
+    .pages div:nth-child(4) {
         display: none;
     }
 }
 
 @media (max-width: 900px) {
     /* Show only 2 divs in middle-side */
-    .middle-side div:nth-child(3),
-    .middle-side div:nth-child(4) {
+    .pages div:nth-child(3),
+    .pages div:nth-child(4) {
         display: none;
     }
 }
 
 @media (max-width: 600px) {
     /* Show only 1 div in middle-side */
-    .middle-side div:nth-child(2),
-    .middle-side div:nth-child(3),
-    .middle-side div:nth-child(4) {
+    .pages div:nth-child(2),
+    .pages div:nth-child(3),
+    .pages div:nth-child(4) {
         display: none;
     }
+}
+.search-bar-container{
+    display:block;
+    width: 100%;
+    
+}
+.search-bar{
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.search-bar input{
+    margin-left: 20px;
+    padding: 8px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    flex: 2;
+    max-width: 100%;
+    width: 80%;
+    min-width: 120px;
+}
+.search-bar button {
+    border: 1px solid rgb(201, 196, 196);
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+.search-bar button img{
+    width: 10px;
+    height: 10px;
 }
