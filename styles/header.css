@@ -1,11 +1,24 @@
 .left-side{
     width: 370px;
+    height: 100%;
     text-align: center;
 }
-.left-side img{
-    width: 280px;
+.left-side-img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+}
+.left-side-img img{
+    position: relative;
+    width: 200px;
     height: 120px;
-    margin-left: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+.left-side-img img:hover {
+    transform: translateX(50px); /* Move up and scale slightly */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    cursor: pointer;
 }
 .middle-side{
     display:flex;
@@ -14,8 +27,6 @@
     height: 100%;
 }
 .middle-side-container{
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
 .pages{
@@ -28,6 +39,7 @@
     align-items: center; 
 }
 .pages a{
+    display: inline-block;
     text-decoration: none;
     color: black;
     padding-right: 10px;
@@ -37,6 +49,16 @@
     background-color: rgb(255, 255, 255);
     flex: 1;
     text-wrap: nowrap;
+
+    transition: all 0.2s ease-in-out;
+}
+.pages a:hover{
+    padding-top: 38px;
+    padding-bottom: 38px;
+    transform: translateY(-3px);
+    box-shadow: 5px 10px 30px rgb(0,0,0, 0.1);
+    /* Optional: Add subtle scale */
+    transform: translateY(-3px) scale(1.3);
 }
 .right-side{
     background-color: rgb(255, 255, 255);
@@ -95,14 +117,38 @@
     }
 }
 
-@media (max-width: 600px) {
-    /* Show only 1 div in middle-side */
+@media (max-width: 768px) {
+    .middle-side,
+    .pages div:nth-child(1),
     .pages div:nth-child(2),
     .pages div:nth-child(3),
-    .pages div:nth-child(4) {
-        display: none;
+    .pages div:nth-child(4),    
+    .search-icon, 
+    .person, 
+    .shopping-cart{
+        display: none !important;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .left-side{
+        width: auto;
+        flex: 0 1 auto;
+        justify-content: center;
+    }
+    .right-side{
+        width: auto;
+        padding-right: 20px;
+    }
+    .right-side-container{
+        justify-content: flex-end;
+    }
+    .hamburger-icon{
+        display: flex !important;
+        align-items: center;
     }
 }
+
 .search-bar-container{
     display:block;
     width: 100%;
@@ -141,4 +187,22 @@
 .search-bar button img{
     width: 10px;
     height: 10px;
+}
+
+.hamburger-icon {
+    display: none; /* Hidden by default */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block; /* Show on mobile */
+    }
 }

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Family Store</title>
-    <link rel="shortcut icon" href="../img/logo.png" />
+    <title>Starboy Store</title>
+    <link rel="shortcut icon" href="../img/logo_1.png.png" />
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/general.css" />
     <link rel="stylesheet" href="../styles/left-side.css" />
@@ -17,12 +17,18 @@
       rel="stylesheet"
     />
   </head>
+
+
+  
   <body>
     <div class="container">
       <div class="header">
 
         <section class="left-side">
-          <img src="../img/left-side-img.png" alt="left-img" />
+          <div class="left-side-img">
+            <img src="../img/logo_1.png" alt="left-img" />
+          </div>
+
         </section>
 
         <section class="middle-side">
@@ -35,25 +41,21 @@
                         <a href="#bosuutap">BỘ SƯU TẬP | COLLECTIONS</a>
                     </div>
                     <div>
-                        <a href="#aboutus">FAMILY STORE | ABOUT US</a>
+                        <a href="#aboutus">DEPTRAI STORE | ABOUT US</a>
                     </div>
                     <div>
                         <a href="#chinhsachdoitra">CHÍNH SÁCH ĐỔI TRẢ</a>
                     </div>
                 </div>
- <!--
-                    <div class="search-bar-container">
-                    <div class="search-bar">
-                        <input type="text"id="search" name="search" placeholder="Nhập tên sản phẩm ở đây"/>
-                        <button type="submit"><img src="../img/search-button.jpg" alt="search" /></button>
-                    </div>
-                </div>
-              -->
-
             </div>
         </section>
         <section class="right-side">
           <div class="right-side-container">
+            <div class="hamburger-icon" id="hamburger-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+              </svg>
+            </div>
             <div class="search-icon">
                 <a href="#search">
                 <img src="../img/search-button.jpg" alt="search">
@@ -74,7 +76,7 @@
       </div>
       <div class="main">
         <div class="banner">
-            <img src="../img/banner.jpg" alt="banner">
+            <img src="../img/banner_3.png" alt="banner">
         </div>
     
         <!-- Search Input -->
@@ -133,6 +135,52 @@
             </div>
     
             <!-- Repeat for more products (up to 12 for 3 rows) -->
+            <div class="product-container">
+              <div class="image-container">
+                <img src="../img/product/product5.jpg" alt="Product 1" class="product-image" />
+                <img src="../img/product/product5_hover.jpg" alt="Product 1 Hover" class="product-image hover-image" />
+              </div>
+              <div class="product-details">
+                    <p class="product-name">Tom and Jerry shirt</p>
+                    <p class="product-price">500.000₫</p>
+              </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="product-container">
+              <div class="image-container">
+                <img src="../img/product/product6.jpg" alt="Product 2" class="product-image" />
+                <img src="../img/product/product6_hover.jpg" alt="Product 2 Hover" class="product-image hover-image">
+              </div>
+              <div class="product-details">
+                  <p class="product-name">Alphabet shirt</p>
+                  <p class="product-price">450.000₫</p>
+              </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="product-container">
+              <div class="image-container">
+                <img src="../img/product/product3.webp" alt="Product 3" class="product-image" />
+                <img src="../img/product/product3_hover.webp" alt="Product 3 Hover" class="product-image hover-image">
+              </div>
+              <div class="product-details">
+                  <p class="product-name">Brother shirt</p>
+                  <p class="product-price">400.000₫</p>
+              </div>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="product-container">
+              <div class="image-container">
+                <img src="../img/product/product4.webp" alt="Product 4" class="product-image" />
+                <img src="../img/product/product4_hover.webp" alt="Product 4 Hover" class="product-image hover-image">
+              </div>
+              <div class="product-details">
+                  <p class="product-name">Skeleton shirt</p>
+                  <p class="product-price">420.000₫</p>
+              </div>
+            </div>
         </div>
     </div>
     </div>
