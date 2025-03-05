@@ -101,58 +101,6 @@
     font-size: 12px;
 }
 
-/* Media Queries for Responsive Layout */
-@media (max-width: 1400px) {
-    /* Show only 3 divs in middle-side */
-    .pages div:nth-child(4) {
-        display: none;
-    }
-}
-
-@media (max-width: 900px) {
-    /* Show only 2 divs in middle-side */
-    .pages div:nth-child(3),
-    .pages div:nth-child(4) {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .middle-side,
-    .pages div:nth-child(1),
-    .pages div:nth-child(2),
-    .pages div:nth-child(3),
-    .pages div:nth-child(4),    
-    .search-icon, 
-    .person, 
-    .shopping-cart{
-        display: none !important;
-    }
-    .header{
-        justify-content: space-between;
-    }
-    .left-side{
-        width: auto;
-        flex: 0 1 auto;
-        justify-content: center;
-    }
-    .left-side-img img{
-        width: 140px;
-        height: 100%;
-    }
-    .right-side{
-        width: auto;
-        padding-right: 20px;
-    }
-    .right-side-container{
-        justify-content: flex-end;
-    }
-    .hamburger-icon{
-        display: flex !important;
-        align-items: center;
-    }
-}
-
 .search-bar-container{
     display:block;
     width: 100%;
