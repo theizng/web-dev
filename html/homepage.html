@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starboy Store</title>
     <link rel="shortcut icon" href="../img/logo_1.png" />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/homepage/main.css" />
     <link rel="stylesheet" href="../styles/general.css" />
-    <link rel="stylesheet" href="../styles/left-side.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/homepage/header.css" />
     <link rel="stylesheet" href="../styles/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,18 +83,18 @@
         <a href="#chinhsachdoitra">CHÍNH SÁCH ĐỔI TRẢ</a>
       </div>
       <div class="main">
+
         <div class="banner">
           <img src="../img/banner_3.png" alt="banner" />
         </div>
         <!-- Search Input -->
 
-        <div class="search-input-container" id="search">
-          <input
-            type="text"
-            placeholder="Nhập tên sản phẩm..."
-            class="search-input"
-          />
-        </div>
+        <nav class="search-input-container" aria-label="Tìm kiếm sản phẩm">
+          <input type="search" 
+                 class="search-input" 
+                 placeholder="Tìm kiếm sản phẩm..."
+                 aria-label="Nhập từ khóa tìm kiếm">
+        </nav>
 
         <!--Hot sale item animation-->
         <div class="hot-sale-container">
@@ -261,52 +260,49 @@
             </div>
           </div>
         </section>
-        <!-- After Product Grid -->
-        <!-- After Product Grid -->
+
         <section class="homepage-sections">
-          <!-- 1. Featured Collections -->
-        <!-- Collections Section -->
-        <div class="collections-section">
-          <h2>BỘ SƯU TẬP NAM TÍNH</h2>
-          <div class="collections-grid">
-              <!-- Streetwear Collection -->
-              <a href="#streetwear" class="collection-card">
-                  <img src="../img/collections/street-wear.jpg" alt="Phong Cách Streetwear">
-                  <div class="collection-overlay">
-                      <h3>STREETWEAR <br>NĂNG ĐỘNG</h3>
-                  </div>
-              </a>
 
-              <!-- Office Style -->
-              <a href="#office-style" class="collection-card">
-                  <img src="../img/collections/men-suit.jpg" alt="Thời Trang Công Sở">
-                  <div class="collection-overlay">
-                      <h3>PHONG CÁCH <br>CÔNG SỞ</h3>
-                  </div>
-              </a>
+          <section class="collections-section">
+            <h2>BỘ SƯU TẬP NAM TÍNH</h2>
+              <div class="collections-grid">
+                <a href="#streetwear" class="collection-card">
+                    <img src="../img/collections/street-wear.jpg" alt="Phong Cách Streetwear">
+                    <div class="collection-overlay">
+                        <h3>STREETWEAR <br>NĂNG ĐỘNG</h3>
+                    </div>
+                </a>
 
-              <!-- New: Sporty Collection -->
-              <a href="#sporty" class="collection-card">
-                  <img src="../img/collections/sporty.jpg" alt="Phong Cách Thể Thao">
-                  <div class="collection-overlay">
-                      <h3>PHONG CÁCH <br>THỂ THAO</h3>
-                  </div>
-              </a>
-          </div>
-        </div>
+                <!-- Office Style -->
+                <a href="#office-style" class="collection-card">
+                    <img src="../img/collections/men-suit.jpg" alt="Thời Trang Công Sở">
+                    <div class="collection-overlay">
+                        <h3>PHONG CÁCH <br>CÔNG SỞ</h3>
+                    </div>
+                </a>
+
+                <!-- New: Sporty Collection -->
+                <a href="#sporty" class="collection-card">
+                    <img src="../img/collections/sporty.jpg" alt="Phong Cách Thể Thao">
+                    <div class="collection-overlay">
+                        <h3>PHONG CÁCH <br>THỂ THAO</h3>
+                    </div>
+                </a>
+            </div>
+          </section>
 
           <!-- 2. Promotional Banner -->
-          <div class="promo-banner">
+          <section class="promo-banner">
             <img src="../img/men-banner.png" alt="Khuyến Mãi Cho Nam" />
             <div class="promo-content">
               <h2>ĐẠI HẠ GIÁ THÁNG NÀY</h2>
               <p>Giảm 30% toàn bộ áo sơ mi & phụ kiện</p>
               <button class="shop-now-btn">Mua Ngay</button>
             </div>
-          </div>
+          </section>
 
           <!-- 3. New Arrivals -->
-          <div class="new-arrivals">
+          <section class="new-arrivals">
             <h2>HÀNG MỚI VỀ</h2>
             <div class="product-grid">
               <!-- Example Product 1 -->
@@ -364,10 +360,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <!-- 4. Brand Story Teaser -->
-          <div class="brand-teaser">
+          <section class="brand-teaser">
             <div class="brand-content">
               <h2>CÂU CHUYỆN STARBOY</h2>
               <p>
@@ -387,7 +383,7 @@
               alt="Xưởng Thiết Kế Nam Giới"
               class="brand-image"
             />
-          </div>
+          </section>
         </section>
 
         <!-- 5. Newsletter Section -->
