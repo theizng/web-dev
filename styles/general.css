@@ -14,3 +14,9 @@ body{
     margin: 0;
     padding: 0;
 }
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-dark: #2f3542;
+    --border-light: #dfe4ea;
+}
