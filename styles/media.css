@@ -1,0 +1,148 @@
+/* ===== Responsive Breakpoints ===== */
+/* Sắp xếp theo thứ tự từ lớn -> nhỏ */
+@media (max-width: 1400px) {
+    .pages div:nth-child(4),
+    .product-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 1200px) {
+    .collections-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Gộp chung với breakpoint 1200px nếu cùng thuộc tính */
+}
+
+@media (max-width: 900px) {
+    .pages div:nth-child(3),
+    .pages div:nth-child(4) { 
+        display: none; 
+    }
+    .product-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .middle-side,
+    .pages div:nth-child(1),
+    .pages div:nth-child(2),
+    .pages div:nth-child(3),
+    .pages div:nth-child(4),    
+    .search-icon, 
+    .person, 
+    .shopping-cart { 
+        display: none !important; 
+    }
+    
+    .header { 
+        justify-content: space-between; 
+    }
+    
+    .left-side { 
+        width: auto;
+        flex: 0 1 auto;
+        justify-content: center;
+    }
+    
+    .left-side-img img { 
+        width: 140px; 
+    }
+    
+    .right-side { 
+        width: auto;
+        padding-right: 20px;
+    }
+    
+    .right-side-container { 
+        justify-content: flex-end; 
+    }
+    
+    .hamburger-icon { 
+        display: flex !important; 
+    }
+
+    /* Collections */
+    .collections-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .collection-card { 
+        height: 350px; 
+    }
+
+    /* Brand Teaser */
+    .brand-teaser {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .brand-image { 
+        height: 300px;
+        max-width: 500px;
+    }
+
+    /* Footer */
+    .footer-content { 
+        grid-template-columns: 1fr; 
+    }
+
+    /* Promo Banner */
+    .promo-banner {
+        margin: 30px 0;
+        border-width: 1px;
+    }
+    
+    .promo-banner img {
+        height: 300px;
+    }
+    
+    .promo-content {
+        left: 20px;
+        max-width: 250px;
+    }
+    .floating-contacts {
+        right: 10px;
+        bottom: 10px;
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .contact-icon img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid { 
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-image { 
+        height: 250px; 
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+
+}

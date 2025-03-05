@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starboy Store</title>
+    <link rel="shortcut icon" href="../img/logo_1.png" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+    <link rel="stylesheet" href="../styles/collections/collections.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+          <section class="left-side">
+            <div class="left-side-img">
+              <img src="../img/logo_1.png" alt="left-img" />
+            </div>
+          </section>
+  
+          <section class="middle-side">
+            <div class="middle-side-container">
+              <div class="pages">
+                <div>
+                  <a href="#trangchu">TRANG CHỦ | HOME</a>
+                </div>
+                <div>
+                  <a href="#bosuutap">BỘ SƯU TẬP | COLLECTIONS</a>
+                </div>
+                <div>
+                  <a href="#aboutus">DEPTRAI STORE | ABOUT US</a>
+                </div>
+                <div>
+                  <a href="#chinhsachdoitra">CHÍNH SÁCH ĐỔI TRẢ</a>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <section class="right-side">
+            <div class="right-side-container">
+              <div class="hamburger-icon" id="hamburger-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    fill="currentColor"
+                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                  />
+                </svg>
+              </div>
+              <div class="search-icon">
+                <a href="#search">
+                  <img src="../img/search-button.jpg" alt="search" />
+                </a>
+              </div>
+              <div class="person">
+                <img src="../img/person.PNG" alt="person" />
+              </div>
+              <div class="shopping-cart">
+                <img src="../img/shopping-cart.jpg" alt="shopping-cart" />
+                <div class="order-count">
+                  <p>10</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Add this right after the header closing tag -->
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="#trangchu">TRANG CHỦ | HOME</a>
+          <a href="#bosuutap">BỘ SƯU TẬP | COLLECTIONS</a>
+          <a href="#aboutus">DEPTRAI STORE | ABOUT US</a>
+          <a href="#chinhsachdoitra">CHÍNH SÁCH ĐỔI TRẢ</a>
+        </div>
+
+        <main class="main-collections">
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="#trangchu">Trang chủ</a> &gt;
+                <span>Tất cả sản phẩm</span>
+            </nav>
+
+            <!-- Collection Banner -->
+            <section class="collection-banner">
+                <img src="../img/collections-banner.jpg" alt="Tất cả sản phẩm">
+                <div class="banner-overlay">
+                    <h1>BỘ SƯU TẬP TOÀN BỘ</h1>
+                    <p>Hơn 200+ thiết kế độc quyền dành cho phái mạnh</p>
+                </div>
+            </section>
+
+            <!-- Filter Section -->
+            <aside class="collection-filters">
+                <div class="filter-group">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="#ao" class="active">Áo</a></li>
+                        <li><a href="#quan">Quần</a></li>
+                        <li><a href="#phukien">Phụ kiện</a></li>
+                    </ul>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Giá</h3>
+                    <ul>
+                        <li><a href="#under500">Dưới 500.000₫</a></li>
+                        <li><a href="#500-1tr">500.000₫ - 1 Triệu</a></li>
+                        <li><a href="#over1tr">Trên 1 Triệu</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Product Grid -->
+            <section class="collection-grid">
+                <!-- Sử dụng lại product-container từ homepage -->
+                <div class="product-container">
+                    <span class="sale-badge">-30%</span>
+                    <div class="image-container">
+                        <img src="../img/product/ao1.jpg" alt="Áo thun basic" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <p class="product-name">Áo Thun Cổ Tròn Premium</p>
+                        <p class="product-price">
+                            <span class="old-price">450.000₫</span>
+                            315.000₫
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Thêm 15-20 sản phẩm tương tự -->
+                <!-- ... -->
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <span class="page-number">...</span>
+                    <a href="#" class="page-number">10</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer giống nguyên bản -->
+        <footer class="main-footer">
+            <!-- Copy nguyên footer từ homepage -->
+        </footer>
+
+        <!-- Floating Contacts giống nguyên bản -->
+        <div class="floating-contacts">
+            <!-- Copy nguyên floating contacts -->
+        </div>
+    </div>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
